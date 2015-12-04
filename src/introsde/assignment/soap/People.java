@@ -22,7 +22,7 @@ import javax.jws.soap.SOAPBinding.Use;
 public interface People {
 
 	// M #1
-	@WebMethod(operationName = "getPersonList")
+	@WebMethod(operationName = "readPersonList")
 	@WebResult(name = "person")
 	public List<Person> readPersonList();
 
@@ -39,7 +39,7 @@ public interface People {
 	// M #4
 	@WebMethod(operationName = "createPerson")
 	@WebResult(name = "person")
-	public Person addPerson(@WebParam(name = "person") Person person);
+	public Person createPerson(@WebParam(name = "person") Person person);
 
 	// M #5
 	@WebMethod(operationName = "deletePerson")

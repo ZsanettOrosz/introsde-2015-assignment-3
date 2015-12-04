@@ -74,7 +74,7 @@ public class PeopleImpl implements People {
 
 	// M #4
 	@Override
-	public Person addPerson(Person person) {
+	public Person createPerson(Person person) {
 		int len = person.getLifeStatus().size();
         if(len != 0){
         	for(int i = 0; i < len; i++){
